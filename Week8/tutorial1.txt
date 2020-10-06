@@ -1,0 +1,68 @@
+Question 1
+a. char
+b. int
+c. double
+d. oct char
+e. hex int
+f. char
+g. long int
+h. double
+i. dec int
+j. oct int
+k. hex int
+l. hex long int
+
+Question 2
+(a) AAAA
+(b) A65AA   //int (dec)65 instead of char
+(c) AA)A    //char (dec)41 instead of (hex)41
+(d) AAAe    //char (dec)101 instead of (oct)101
+
+Question 3
+(a) runs
+(b) cannot assign
+(c) assign stops at x
+
+Question 4
+precision
+
+Question 5
+(a) 5*2 = 10;
+    10/2 = 5
+(b) 5/2 = (int)2.5 = 2;
+    2*2 = 4
+(c) 1.2+10 = 11.2;
+    11.2*20 = 224.000000
+(d) 2 * 5 = 10
+(e) 2 * 5 = 10
+(f) 3.4 - 1.2 = 2.2;
+    -12L * 2.2 = -26.400002f
+(g) m =n =j =1
+(h) (int)g = 3;
+    3*10 = 30
+(i) 3.4*10 = 34.0;
+    (int)34.0 = 34
+(j) 2 + 1.2 = (int)3.2 = 3
+
+Question 6
+(a) true
+(b) false
+(c) true
+(d) true
+
+Question 7
+(a) reduce DLENGTH
+(b) DLENGTH * 1000
+(c)
+
+Question 8 
+a=a+b;    
+b=a-b;   
+a=a-b;
+OR
+a=a*b;  
+b=a/b;  
+a=a/b;
+
+
+

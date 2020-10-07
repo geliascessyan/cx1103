@@ -5,7 +5,7 @@ int main() {
     printf("Enter x value: ");
     scanf("%lf", &x);
 
-    for (int n=1; n<=30; n++) {
+    for (int n=1; n<=100; n++) {
         double numerator = 1.0, denominator = 1.0;
         for (int power=1; power<=n; power++) {
             numerator *= x;

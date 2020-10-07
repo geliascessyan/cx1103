@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-double exponent(double x, double p);
+double exponent(double x, int p);
 
 int main() {
 
@@ -36,7 +36,7 @@ int main() {
     return 0;
 }
 
-double exponent(double x, double p) {
+double exponent(double x, int p) {
     if (p <= 1) {
         return 1.0 + x;
     } else {

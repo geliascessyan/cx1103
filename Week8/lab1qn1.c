@@ -2,17 +2,17 @@
 
 int main()
 {
-    int studentNumber = 0,mark;
+    int studentNumber=-1,mark=-1;
 
     printf("Enter Student ID: ");
     scanf("%d", &studentNumber);
 
-    while (studentNumber != -1) 
+    while (studentNumber != -1)
     {
         printf("Enter Mark: ");
         scanf("%d", &mark);
 
-        switch (mark) 
+        switch (mark)
         {
             case 75 ... 100:
                 printf("Grade = A");
@@ -26,13 +26,20 @@ int main()
             case 45 ... 54:
                 printf("Grade = D");
                 break;
-            default:
+            case 0 ... 44:
                 printf("Grade = F");
+                break;
+            default:
+                printf("Unrecognised value");
         }
         printf("\n\n");
+        studentNumber = -1;
         printf("Enter Student ID: ");
         scanf("%d", &studentNumber);
-    }
+    };
+
+    printf("\n");
+    printf("End of program\n");
 
     return 0;
 }

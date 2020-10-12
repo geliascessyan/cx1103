@@ -78,12 +78,20 @@ int numDigits1(int num)
 }
 void numDigits2(int num, int *result)
 {
-   *result=0;
-   /* Write your code here */
+   *result = numDigits1(num);
 }
 int digitPos1(int num, int digit)  
 {
-   /* Write your code here */    
+   int pos=0;
+   do {
+      pos++;
+      printf("test %d\n",pos);
+      if (num%10 == digit) {
+         return pos;
+      }
+      num = num/10;
+   } while (num > 0);
+   return 0;    
 }
 void digitPos2(int num, int digit, int *result)  
 {
@@ -100,9 +108,20 @@ void digitPos2(int num, int digit, int *result)
 }
 int square1(int num)
 {  
-   /* Write your code here */
+   int result = 0, x = 1;
+   while (num > 0) {
+      result += x;
+      x += 2; 
+      num--;
+   }
+   return result;
 }   
 void square2(int num, int *result)
 {        
-   /* Write your code here */
+   int x = 1;
+   while (num > 0) {
+      *result += x;
+      x += 2; 
+      num--;
+   }
 }

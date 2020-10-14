@@ -15,12 +15,22 @@ int main() {
     return 0;
 }
 
+/*
 int square1(int num) {  
     int result = 0, x = 1;
     while (num > 0) {
         result += x;
         x += 2; 
         num--;
+    }
+    return result;
+}
+*/
+
+int square1(int num) {  
+    int result = 0, i;
+    for (int i = 0; i < num; i++) {
+        result += 1 + 2*i;
     }
     return result;
 }

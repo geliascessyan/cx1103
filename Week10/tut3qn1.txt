@@ -1,0 +1,17 @@
+1st for loop: 
+    initialise array
+
+2nd for loop: 
+    iterates through array[] (h)
+    add1 function:
+        then iterates through array[][] (k)
+        adds one to each int value in array
+
+3rd for loop:
+    prints each value in array[h][]
+    then print newline
+
+Replace line a:
+    size = 3*4 = size of array
+    iterate through array as 1 dimensional
+    add 1 to all values in array 3 times

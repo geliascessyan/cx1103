@@ -56,5 +56,4 @@ void compress2D(int data[SIZE][SIZE], int rowSize, int colSize)
         }
         putchar('\n');
     }
-
 } 

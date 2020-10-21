@@ -19,12 +19,16 @@ int main() {
 void getdist(int n) {
     int i, r;
     for (i = 0; i < n; i++) {
+        /*
         int randint = rand() % 100;
         for (r = 0; r < 10; r++) {
             if (randint >= (r * 10) && randint <= (r * 10 + 9)) {
                 array[r]++;
             }
         }
+        */
+        int randint = (rand() % 100) / 10;
+        array[randint]++;
     }
 }
 

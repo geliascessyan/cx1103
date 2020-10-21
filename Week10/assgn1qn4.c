@@ -101,8 +101,9 @@ void iremove(int *size, int ar[], int num)
         //find integer
         while (!fin && (n < *size)) {
             if (num == ar[n]) {
-                (*size)--;
                 fin = 1;
+                (*size)--;
+                break;
             }
             n++;
         }

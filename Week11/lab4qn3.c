@@ -24,16 +24,26 @@ int main() {
     return 0;
 }
 
-int palindrome(char *str) {
-    int i, result = 1;
-    int len = strlen(str);
+int palindrome(char *str) { int i, len = strlen(str); for (i = 0; i < len/2; i++) if (str[i] != str[len - 1 - i]) return 0; return 1;}
 
-    for (i = 0; i < len/2; i++) {
-        if (str[i] != str[len - 1 - i]) {
-            result = 0;
-            break;
-        }
-    }
-
-    return result;
+/*
+int palindrome(char *str) { //three line version
+    int i, len = strlen(str);
+    for (i = 0; i < len/2; i++) if (str[i] != str[len - 1 - i]) return 0;
+    return 1;
 }
+*/
+
+/*
+int palindrome(char *str) {
+    int i, len = strlen(str);
+
+    for (i = 0; i < len/2; i++) //{
+        if (str[i] != str[len - 1 - i]) //{
+            return 0;
+        //}
+    //}
+
+    return 1;
+}
+*/

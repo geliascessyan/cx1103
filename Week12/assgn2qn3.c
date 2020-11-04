@@ -29,9 +29,17 @@ int main()
 }
 int findSubstring(char *str, char *substr)  
 {
-    /*find start of substring*/
-    int i;
-    for (i = 0; str[i] != '\0'; i++);
-
-    /*check substring*/
+   /*find start of substring*/
+   int i, j, result = 0;
+   for (i = 0; str[i] != '\0'; i++) {
+      if (str[i] == substr[0]) {
+         /*check substring*/
+         result = 1;
+         for (j = 1; substr[j] != '\0'; j++) {
+            if (str[i+j] != substr[j]) result = 0;
+         }
+         if (result) return result;
+      }
+   }
+   return result;
 }
